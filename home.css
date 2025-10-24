@@ -1,0 +1,312 @@
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Navbar --- */
+#nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(213, 204, 255, 0.418);
+    font-size: 20px;
+    height: 80px;
+    padding: 0 20px;
+    transition: background-color 0.5s ease;
+}
+#nav:hover {
+    background-color: rgba(213, 204, 255, 0.7);
+}
+#logo{
+    height: 200px;
+    width:250px;
+    background-image: url(assets/logo.png);
+    background-size: contain;
+    margin-top: 15px;
+    transition: transform 0.5s ease;
+}
+
+/* #logo {
+    height: 70px;
+    width: 120px;
+    background-image: url(assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    transition: transform 0.5s ease;
+} */
+#logo:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.navb a {
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.navb a:hover {
+    color: rgb(80, 164, 197);
+    transform: scale(1.1);
+}
+
+/* --- Main Banner --- */
+#mbody {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(assets/frontback.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#box1 {
+    max-width: 600px;
+    text-align: center;
+    color: white;
+    animation: floatUp 2s ease-in-out infinite alternate;
+}
+
+#box1 button {
+    height: 75px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.432);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#box1 button:hover {
+    background-color: rgba(80, 164, 197, 0.8);
+    transform: scale(1.05);
+}
+
+#box2 {
+    width: 500px;
+    height: 700px;
+    background-image: url(assets/model1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: floatUp 2s ease-in-out infinite alternate;
+}
+
+/* --- Best Features --- */
+#best {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+.img5 {
+    text-align: center;
+    font-size: 12px;
+    border: 2px solid black;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img5:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.img5 img {
+    width: 200px;
+    height: 250px;
+}
+
+/* --- Products Section --- */
+
+.heading1 h1{
+    font-size: 50px;
+    text-align: center;
+}
+.heading1 h4{
+    text-align: center;
+    font-size: 15px;
+}
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.speclothes {
+    width: 260px;
+    height: 430px;
+    background-color: rgba(213, 204, 255, 0.418);
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.speclothes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.speclothes img {
+    width: 230px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+/* --- Sparckale Section --- */
+#sparckale {
+    height: 300px;
+    width: 100%;
+    background-image: url(assets/sparckal.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1.5s ease;
+}
+#sparckale h1 {
+    text-align: center;
+    font-size: 40px;
+    animation: slideInLeft 1s ease forwards;
+}
+#sparckale h4 {
+    text-align: center;
+    font-size: 30px;
+    animation: slideInRight 1s ease forwards;
+}
+#sparckale button {
+    height: 45px;
+    width: 130px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 700px;
+}
+
+/* --- Offer Section --- */
+.heading1 h1{
+margin-top: 50px;
+}
+#offer {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+#Box1, #Box2 {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+#Box1:hover, #Box2:hover {
+    transform: scale(1.05);
+}
+#Box1 { background-image: url(assets/model2.jpeg); }
+#Box2 { background-image: url(assets/jacketsback.jpeg);  }
+#Box1 button{
+    font-size: 15px;
+    height: 40px;
+    width:150px;
+}
+#Box2 button{
+    font-size: 15px;
+    background-color: transparent;
+    height: 40px;
+    width:150px;
+}
+/* --- Newsletter Section --- */
+#signup {
+    background-image: url(assets/wallpaper\ Hd.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: white;
+}
+#signup input, #signup button {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#signup button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* --- Footer Section --- */
+#details {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 20px;
+}
+#social{
+    height: 30px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#payment{
+    height: 40px;
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#contact,#about,#account,#install h1,h4{
+text-align: left;
+} 
+
+
+
+/* --- Animations --- */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes floatUp {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-10px);}
+}
+@keyframes slideInLeft {
+    0% {transform: translateX(-50px); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+@keyframes slideInRight {
+    0% {transform: translateX(50px); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+
+/* --- Responsive --- */
+@media (max-width: 1200px) {
+    #mbody { flex-direction: column; height: auto; }
+    #box1, #box2 { width: 80%; height: auto; margin: 20px 0; }
+    #offer { flex-direction: column; gap: 30px; align-items: center; }
+}
+
+@media (max-width: 768px) {
+    #nav { flex-direction: column; height: auto; padding: 10px; }
+    .navb { margin: 10px 0; }
+    #best, #products, #details, #signup { flex-direction: column; align-items: center; }
+    .speclothes { width: 90%; margin: 10px 0; }
+    #sparckale button { margin: 20px auto; display: block; }
+}

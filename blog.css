@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(213, 204, 255, 0.418);
+    /* justify-content: space-between; */
+    font-size: 20px;
+    color: black;
+    height: 80px;
+    /* margin-top: 5px; */  
+}
+#logo{
+    height: 200px;
+    width:250px;
+    background-image: url(assets/logo.png);
+    background-size: contain;
+    margin-top: -45px;
+}
+
+#hom{
+    margin-left: 45%;
+}
+
+.navb{
+ color: black;
+ text-decoration: none;
+ margin-top: 40px;
+ margin-left: 30px;
+}
+.navb a {
+  color: black;
+  text-decoration: none;
+}
+.navb a:hover {
+  color: rgb(80, 164, 197);
+}
+#box1{
+    background-image:url(assets/blogsback.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 1500px;
+    text-align: center;
+    color: white;
+    align-content: center;
+}
+#box1 h1{
+    font-size:80px;
+}
+#box1 h4{
+    font-size: 25px;
+}
+
+.div1{
+    margin-left: 150px;
+    height: 440px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -80px;
+    background-color: rgba(131, 139, 143, 0.229);
+    margin: 15px;
+    border-radius: 45px;
+}
+#box3{
+    margin-top: 20px;
+    margin-left: 60px;
+    
+}
+#box2{
+    width: 400px;
+    margin-left: 60px;
+    font-size: 15px;
+    margin-top: 150px;
+}
+#box h3{
+ font-size: 45px;
+}
+#box3 img{
+    height: 400px;
+    width: 380px;
+    border-radius: 45px;
+}
+
+
+#signup{
+    background-image: url(assets/wallpaper\ Hd.jpeg);
+    background-size: contain;
+    width:1500px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    margin-top: 50px;
+}
+#signup div{
+    margin-top: 40px;
+}
+#details{
+     width:1500px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+#social{
+    width:150px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#payment{
+    width:140px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#install button{
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 5px;
+}

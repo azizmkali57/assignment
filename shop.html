@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div id="nav">
+                <div id="logo"></div>
+                <div id="hom" class="navb"><a href="http://127.0.0.1:5500/home.html">Home</a></div>
+                <div class="navb"><a href="http://127.0.0.1:5500/shop.html">Shop</a></div>
+                <div class="navb"><a href="http://127.0.0.1:5500/blog.html">Blog</a></div>
+                <div class="navb"><a href="http://127.0.0.1:5500/about.html">About</a></div>
+                <div class="navb"><a href="http://127.0.0.1:5500/contact.html">Contact</a></div>
+                <div class="navb"><a href=""><img height="25px" width="25px" src="assets/shopping.png" alt=""></a></div>
+        </div>
+
+        <div id="box1">
+          <h1>#stayhome</h1>
+          <h4>save more with coupons & upto 70% off</h4>
+        </div>
+
+
+             <div id="filter">
+              <!-- <h2>Product List</h2> -->
+             <h2>Product Filters</h2>
+
+              <!-- Brand Filter -->
+              <label for="brandFilter">Brand:</label>
+              <select id="brandFilter">
+                <option value="">All</option>
+                <option value="Adidas">Adidas</option>
+                <option value="Nike">Nike</option>
+              </select><br>
+
+              <!-- Category Filter -->
+              <label for="categoryFilter">Category:</label>
+              <select id="categoryFilter">
+                <option value="">All</option>
+                <option value="Tshirt">Tshirt</option>
+                <option value="Hoodie">Hoodie</option>
+              </select><br>
+
+              <!-- Price Range Filter -->
+              <label for="priceFilter">Max Price:</label>
+              <input type="number" id="priceFilter" placeholder="Enter max price">
+              <br>
+
+              <!-- Sort Options -->
+              <label for="sortOptions">Sort By:</label>
+              <select id="sortOptions">
+                <option value="">Default</option>
+                <option value="priceLowHigh">Price: Low to High</option>
+                <option value="priceHighLow">Price: High to Low</option>
+                <option value="newest">Newest</option>
+                <option value="popular">Popularity</option>
+              </select><br>
+             </div>
+
+              <!-- Product Container -->
+              <div id="productContainer" style="display:flex; flex-wrap:wrap; gap:20px;"></div>
+
+
+      
+        <div id="signup">
+          <div><h1>Sign up for Newsletters</h1><br>
+          <h5>Get E-mail updates about our latest shop and special offers</h5>
+          </div>
+
+          <div id="div2">
+            <input style="height: 45px;border-radius: 5px; width: 350px;font-size: 15px;" type="email " placeholder="Your email address"><button style="height: 48px;border-radius: 5px; width: 150px;font-size: 19px;background-color:cornflowerblue;">Sign Up</button>
+          </div>
+         </div>
+     <div id="details">
+              <div id="contact">
+                <!-- <div id="logo"></div> -->
+                <h1>Contact</h1><br><br>
+                <h4>Address:805,Noorani-Nagar Indore,M.P </h4><br>
+                <h4>Phone:(+91)7005776512,(+91)9039530553</h4><br>
+                <h4>Hourse:10:00-18:00, Mon-Sat</h4><br>
+                <h1>Follow Us</h1><br>
+                <div id="social">
+                    <div><img height="25px" width="25px" src="assets/instagram (1).png" alt=""></div>
+                    <div><img height="25px" width="25px" src="assets/facebook.png" alt=""></div>
+                    <div><img height="25px" width="25px" src="assets/youtube.png" alt=""></div>
+                    <div><img height="25px" width="25px" src="assets/twitter.png" alt=""></div>
+                </div>
+              </div>
+
+              <div id="about">
+                <h1>About</h1><br><br>
+                <h4>About Us</h4><br>
+                <h4>Delivery Options</h4><br>
+                <h4>Privacy and Policy</h4><br>
+                <h4>Terms and Conditions</h4><br>
+                <h4>Contact Us</h4><br>
+
+              </div>
+
+
+
+              <div id="account">
+                <h1>My Account</h1><br><br>
+                <h4>Sign In</h4><br>
+                <h4>View Cart</h4><br>
+                <h4>My wishlist</h4><br>
+                <h4>Track My Order</h4><br>
+                <h4>Help</h4>
+              </div>
+
+
+
+              <div id="install">
+                <h1>Install App</h1><br>
+                <h4>From App Store or Google Play </h4><br>
+                <button style="margin: 5px;"><img height="30px" width="30px" src="assets/apple-logo.png" alt="">Download on the <br> App store</button><button style="margin: 5px;"><img height="30px" width="30px"src="assets/play.png" alt="">Download on the <br>Play Store</button><br><br>
+
+                <h4>Secured Payment Gateway</h4><br>
+                <div id="payment">
+                <div><img height="35px" width="40px" src="assets/card.png" alt=""></div>
+                <div><img height="35px" width="40px" src="assets/visa.png" alt=""></div>
+                <div><img height="35px" width="40px" src="assets/maestro.png" alt=""></div>
+                </div>
+              </div>
+         </div>
+
+          <script src="script.js"></script>
+</body>
+</html>
